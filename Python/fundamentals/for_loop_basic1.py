@@ -15,7 +15,8 @@ for x in range (1, 101):
 y=0
 
 for x in range (0, 500001):
-    y=x+y
+    if x%2!=0:
+        y=x+y
     if x<500000:
         continue
     else:
