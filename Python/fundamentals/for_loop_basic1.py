@@ -1,4 +1,4 @@
-for x in range (1, 151):
+for x in range (0, 151):
     print (x)
 
 for x in range (5, 1001, 5):
