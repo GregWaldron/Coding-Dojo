@@ -30,4 +30,4 @@ def this_length_that_value(size, value):
     for x in range (0, size):
         newlist.append(value)
     return newlist
-this_length_that_value(6, 2)
+print(this_length_that_value(6, 2))
