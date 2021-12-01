@@ -20,7 +20,7 @@ print(students)
 sports_directory["soccer"][0] = "Andres"
 print(sports_directory)
 
-z[0]["y"] = "z"
+z[0]["y"] = 30
 print (z)
 
 # 2. Iterate Through a List of Dictionaries
