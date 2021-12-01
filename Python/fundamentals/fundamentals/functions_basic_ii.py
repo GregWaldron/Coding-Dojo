@@ -29,5 +29,5 @@ def this_length_that_value(size, value):
     newlist=[]
     for x in range (0, size):
         newlist.append(value)
-    print(newlist)
+    return newlist
 this_length_that_value(6, 2)
