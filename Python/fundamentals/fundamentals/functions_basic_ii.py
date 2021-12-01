@@ -2,8 +2,8 @@ def countdown (number):
     list = []
     for x in range (number, -1, -1):
         list.append(x)
-    print (list)
-countdown(35)
+    return(list)
+print(countdown(35))
 
 def print_and_return (list):
     print(list[0])
