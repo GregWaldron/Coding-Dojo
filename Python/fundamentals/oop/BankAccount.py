@@ -12,7 +12,11 @@ class BankAccount:
         return self
 
     def withdraw(self, amount):
-        self.balance -= amount
+        if self.balance - amount >= 0:
+            self.balance -= amount
+        else:
+            self.balance -= 5
+            print ("Insufficient funds: Charging a $5 fee")
         return self
 
     def display_account_info(self):
@@ -28,6 +32,12 @@ class BankAccount:
         for account in cls.all_accounts:
             print ("Interest Rate: " + str(account.int_rate) + "  Balance: " + str(account.balance))
         return sum
+
+class User:
+    def __init__(self, name, email):
+        self.name = name
+        self.email = email
+        self.account = BankAccount(int_rate=0.02, balance=0)
 
 account1 = BankAccount(.025, 752000)
 account2 = BankAccount(.021, 81093)
